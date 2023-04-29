@@ -194,14 +194,17 @@ FILD op1 ; для целых
 
 Псевдокод: `push(op1)`
 
-### FLD1/FLDZ/FLDPI (Fload LoaD 1/Zero/PI)
-Загружает в стек 1 / +0 / $\pi$.
-```nasm
-FLD1    ; 1
-FLDZ    ; +0
-FLDPI   ; pi
-```
-Псевдокод: `push(1 / +0 / pi)`
+### FLDconst (Float LoaD 'const')
+При желании прогер может загрузить на вершину стека следующие константы:
+- $1$ - `FLD1`
+- $+0$ - `FLDZ`
+- $\pi$ - `FLDPI`
+- $\log_2{e}$ - `FLDL2E`
+- $\log_2{10}$ - `FLDL2T`
+- $\log_{10}{2}$ - `FLDLG2`
+- $\ln{2}$ - `FLDLN2`
+
+Псевдокод: `push('const')`
 
 ### FST/FIST
 Загружает верхнее значение стека в `op1`.
