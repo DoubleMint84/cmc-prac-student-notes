@@ -22,7 +22,7 @@ main:
     cmove EAX, ECX
     je .end
 .end:
-    call io_print_гdec
+    call io_print_udec
     xor EAX, EAX
     ret
 ```
