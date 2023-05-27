@@ -152,7 +152,7 @@ $a = (-1)^{s}*2^{1-off}*m * 2^{-M}$,
             <td>1111</td>
         </tr>
         <tr>
-            <th>min denorm x</th>
+            <th>max denorm x</th>
             <td>-</td>
             <td>0</td>
             <td>000</td>
